@@ -1,0 +1,4 @@
+{% for link in links %}
+Original Link: {{ link.original_url }} - Short Link: {{ url_for('short.redirect_to_url', short_url=short_url, _external=True) }} - Visits: {{ link.visits }}
+<br>
+{% endfor %}
